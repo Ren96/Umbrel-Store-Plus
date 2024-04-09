@@ -16,7 +16,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
-      - SERVERURL=wireguard.umbrul.local
+      - SERVERURL=umbrel-store-plus-wireguard_server_1
       - SERVERPORT=51820 
       - PEERS=1 
       - PEERDNS=auto 
