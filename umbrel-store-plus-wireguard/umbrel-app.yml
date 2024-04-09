@@ -7,7 +7,13 @@ category: networking
 version: "1.0.0"
 port: 51820
 description: >
-  WireGuard VPN.
+  WireGuard aims to be as easy to configure and deploy as SSH. 
+  A VPN connection is made simply by exchanging very simple public keys 
+  – exactly like exchanging SSH keys – 
+  and all the rest is transparently handled by WireGuard. 
+  It is even capable of roaming between IP addresses, just like Mosh. 
+  There is no need to manage connections, be concerned about state, manage daemons, or worry about what's under the hood. 
+  WireGuard presents an extremely basic yet powerful interface.
 
 developer: WireGuard
 website: https://github.com/linuxserver/docker-wireguard
