@@ -1,7 +1,6 @@
 version: "3.7"
 
 services:
-
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
@@ -10,12 +9,9 @@ services:
     
   server:
     image: lscr.io/linuxserver/wireguard:latest
-    user: "1000:1000"
-    init: true
-    container_name: wireguard
-    cap_add:
-      - NET_ADMIN
-      - SYS_MODULE 
+    volumes:
+      - ${APP_DATA_DIR}/wireguard/config:/config
+      - /lib/modules:/lib/modules
     environment:
       - PUID=1000
       - PGID=1000
@@ -25,9 +21,11 @@ services:
       - PEERS=1 
       - PEERDNS=auto 
       - LOG_CONFS=true 
-    volumes:
-      - /path/to/appdata/config:/config
-      - /lib/modules:/lib/modules
+    user: "1000:1000"
+    init: true
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE 
     ports:
       - 51820:51820/udp
     sysctls:

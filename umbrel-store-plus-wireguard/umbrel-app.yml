@@ -1,25 +1,23 @@
 manifestVersion: 1
 id: umbrel-store-plus-wireguard
 name: WireGuard
-tagline: Lightweight, secure, fast VPN protocol for modern networks.
+tagline: Self Host VPN.
 icon: https://svgur.com/i/15BB.svg
 category: networking
 version: "1.0.0"
 port: 51820
-description: >-
-WireGuard is a communication protocol and free and open-source software that 
-implements encrypted virtual private networks, 
-and was designed with the goals of ease of use, high speed performance, 
-and low attack surface. It aims to be smaller and better performing than IPsec and OpenVPN, 
-two common tunneling protocols.
+description: >
+  WireGuard VPN.
 
 developer: WireGuard
 website: https://github.com/linuxserver/docker-wireguard
 submitter: Ren
-submission: https://github.com/Ren96/Umbrel-Store-Plus
-repo: https://github.com/Ren96/Umbrel-Store-Plus
-support: https://github.com/Ren96/Umbrel-Store-Plus
+submission: 
+repo: https://github.com/linuxserver/docker-wireguard
+support: https://github.com/linuxserver/docker-wireguard/issues
 gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >
+  -Release
