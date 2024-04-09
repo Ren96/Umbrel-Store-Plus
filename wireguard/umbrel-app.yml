@@ -7,11 +7,10 @@ category: networking
 version: "1.0.0"
 port: 51820
 description: >-
-WireGuard is a communication protocol and free and open-source software that 
-implements encrypted virtual private networks, 
-and was designed with the goals of ease of use, high speed performance, 
-and low attack surface. It aims to be smaller and better performing than IPsec and OpenVPN, 
-two common tunneling protocols.
+  Add your app's description here.
+
+
+  You can also add newlines!
 
 developer: WireGuard
 website: https://github.com/linuxserver/docker-wireguard
