@@ -4,8 +4,8 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: umbrel-store-plus-wireguard_server_1
-      APP_PORT: 51820
+      #APP_HOST: umbrel-store-plus-wireguard_server_1
+      #APP_PORT: 51820
     
   server:
     image: lscr.io/linuxserver/wireguard:latest
