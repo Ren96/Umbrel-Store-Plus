@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: usp-wireguard
+id: umbrel-store-plus-wireguard
 name: WireGuard
 tagline: Lightweight, secure, fast VPN protocol for modern networks.
 icon: https://svgur.com/i/15BB.svg
