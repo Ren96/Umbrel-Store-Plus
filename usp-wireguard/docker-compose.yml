@@ -1,26 +1,14 @@
 version: "3.7"
 
 services:
-  wireguard:
-    image: lscr.io/linuxserver/wireguard:latest
-    container_name: wireguard
-    cap_add:
-      - NET_ADMIN
-      - SYS_MODULE 
+
+  app_proxy:
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
-      - SERVERURL=wireguard.umbrul.com
-      - SERVERPORT=51820 
-      - PEERS=1 
-      - PEERDNS=auto 
-      - LOG_CONFS=true 
-    volumes:
-      - /path/to/appdata/config:/config
-      - /lib/modules:/lib/modules
-    ports:
-      - 51820:51820/udp
-    sysctls:
-      - net.ipv4.conf.all.src_valid_mark=1
-    restart: unless-stopped
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: sparkles-hello-world_server_1
+      APP_PORT: 3000
+    
+  server:
+    image: getumbrel/community-app-store-hello-world:latest
+    user: "1000:1000"
+    init: true
